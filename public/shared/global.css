@@ -1,3 +1,11 @@
 .hljs {
   background: #F5F5F5;
 }
+
+hr {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 2px solid #E8E8E8;
+  border-radius: 20px;
+}
