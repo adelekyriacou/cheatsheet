@@ -102,6 +102,35 @@
         </article>
         <hr>
       </section>
+
+      <section id="Setting_up_an_app_with_node.js_and_express" class="main-section">
+        <header>
+          <h2>Setting up an app with node.js and Express</h2>
+        </header>
+        <article>
+          <h3>Prerequisite</h3>
+          <p>If you don't have Homebrew installed yet, open your terminal and paste this: <pre><code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"</code></pre>
+          The script will explain what it'll do and will pause before it does it. Once that's done its thing, move on to the below.</p>
+
+          <h3>Steps</h3>
+          <p>Type in your terminal: <pre><code>brew install node</code></pre> Once that's all done then type: <pre><code>mkdir app_name<br>cd app_name</code></pre> Now to initialise the project and link it to npm: <pre></code>npm init</code></pre> The terminal will prompt you for a few things, you can just enter your way through it – however, when you get to this: <pre><code>entry point: (index.js)</code></pre>Change it to this: <pre><code>app.js</code></pre>Next, run this to install Express (make sure you're still within the <code>app_name</code> directory): <pre><code> npm install express --save</code></pre> Open up your editor and create a file named <em>app.js</em> within the app_name directory. Then write the following:
+          <pre><code>var express = require('express');
+var app = express();
+
+app.get('/', function (req, res) {
+  res.send('Hello! I am birthed!');
+});
+
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!');
+});
+</code></pre>
+          Now, you can get the app running. Go back to the terminal and run the command: <pre><code>node app.js</code></pre>
+          Once you've done that, you can access via <a href="http://localhost:3000/">http://localhost:3000/</a> in your browser address bar. Boom.</p>
+
+        </article>
+        <hr>
+      </section>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
   </body>
