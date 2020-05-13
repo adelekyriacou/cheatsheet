@@ -1,3 +1,8 @@
+
+body {
+  color: #222;
+}
+
 #navbar {
   top: 0;
   display: flex;
@@ -26,6 +31,14 @@
   padding: .5rem 1.5rem;
   display: block;
   cursor: pointer;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0;
 }
 .hljs {
   background: #F5F5F5;
