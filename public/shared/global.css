@@ -1,3 +1,32 @@
+#navbar {
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#navbar ul {
+  padding-inline-start: 0px;
+  margin: 0 auto;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+#navbar h1 {
+  text-align: center;
+  margin: 1rem;
+}
+
+#navbar li {
+  list-style: none;
+  border-top: 1px solid #E8E8E8;
+}
+
+#navbar a {
+  padding: .5rem 1.5rem;
+  display: block;
+  cursor: pointer;
+}
 .hljs {
   background: #F5F5F5;
 }
