@@ -95,3 +95,11 @@ hr {
     text-align: center;
     margin: 1rem;
   }
+
+  #main-doc {
+    position: absolute;
+    margin-left: 310px;
+    top: 0;
+    padding: 20px;
+    margin-bottom: 110px;
+  }
