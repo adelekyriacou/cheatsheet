@@ -20,6 +20,56 @@
         </ul>
       </header>
     </nav>
+      <section id="Git_gotchas" class="main-section">
+        <header>
+          <h2>Git gotchas</h2>
+        </header>
+        <article>
+          <p>Branching workflow as per <a href="https://adeleandluke.com/">adeleandluke.com</a>, as I can never remember.</p>
+          <h3><span class="upper">Option eines</span> – Branch sauce</h3>
+          <ol>
+            <li>Make branch</li>
+            <li>Do some work</li>
+            <li>Stage work</li>
+            <li>Commit work</li>
+            <li>Push branch</li>
+            <ul>
+              <li>Type: <br><pre><code>git push -u origin branch-name</code></pre></li>
+              <li>Gives URL to open pull req</li>
+            </ul>
+            <li>Make pull request</li>
+            <li>Check preview environment and wait for test to pass</li>
+            <li>Merge if OK</li>
+            <li>Check production</li>
+            <li>Make woohoo</li>
+            <li>Back to term</li>
+            <li>Checkout to master branch</li>
+            <li>Type: <br><pre><code>git pull</code></pre></li>
+            <li>And then run this to tidy up old branches: <br><pre><code>git springclean</pre></code></li>
+          </ol>
+
+          <h3><span class="upper">Option zwei</span> – Branch like you mean it</h3>
+          <ol>
+            <li>Do some work</li>
+            <li>Stage it</li>
+            <li>Commit it</li>
+            <li>Push while making a branch:</li>
+            <ul>
+              <li>Type: <br><pre><code>git push origin HEAD:branch-name</code></pre></li>
+              <li>Gives URL to open pull req</li>
+            </ul>
+            <li>Make pull request</li>
+            <li>Check preview environment and wait for test to pass</li>
+            <li>Merge if OK</li>
+            <li>Check production</li>
+            <li>Make woohoo</li>
+            <li>Back to term</li>
+            <li>Run: <br><pre><code>git pull</code></pre></li>
+            <li>Run: <br><pre><code>git springclean</code></pre></li>
+          </ol>
+        </article>
+        <hr>
+      </section>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
   </body>
