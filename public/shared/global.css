@@ -72,3 +72,26 @@ hr {
 }
 
 /* Devices larger than 850px wide, e.g. laptops. */
+
+@media (min-width: 850px) {
+  #navbar {
+    position: fixed;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    padding: 20px;
+  }
+
+  #navbar ul {
+    border: 0;
+  }
+
+  #navbar li {
+    border: 0;
+  }
+
+  #navbar h1 {
+    text-align: center;
+    margin: 1rem;
+  }
