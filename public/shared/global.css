@@ -49,6 +49,15 @@ article {
 h2 {
   margin: 0;
 }
+
+pre {
+  font-size: 0.75rem;
+  background: #F5F5F5;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
 .hljs {
   background: #F5F5F5;
 }
