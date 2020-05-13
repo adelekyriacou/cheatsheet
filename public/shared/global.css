@@ -1,3 +1,4 @@
+/* Mobile devices */
 
 body {
   color: #222;
@@ -69,3 +70,5 @@ hr {
   border-top: 2px solid #E8E8E8;
   border-radius: 20px;
 }
+
+/* Devices larger than 850px wide, e.g. laptops. */
